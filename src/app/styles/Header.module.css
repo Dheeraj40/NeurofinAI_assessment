@@ -1,0 +1,174 @@
+/* styles/Header.module.css */
+.headerContainer {
+  background-color: #0d0d0d;
+  
+  padding: 20px;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 20vh; /* Make sure this covers at least 20% of the screen */
+}
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.searchBar {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5); 
+  display: flex;
+  align-items: center;
+  background-color: #1e1e1e;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 15%;
+}
+
+.searchBar input {
+  border: none;
+  background: none;
+  color: #fff;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.slashIcon {
+  margin-left: 10px;
+  color: #fff;
+}
+
+.headerIcons {
+  display: flex;
+  align-items: center;
+}
+
+.sliderContainer {
+  border: 1px solid #444; /* Add border to the container */
+  padding: 5px; /* Add some padding */
+  border-radius: 25px; /* Optional: round the corners */
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Space between the slider container and the other icons */
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+.headerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerBottom h1 {
+  margin: 0;
+}
+
+.addButton {
+  background-color: transparent;
+  color: #28a745;
+  border-color: #28a745;
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+.addButton svg {
+  margin-right: 5px;
+}

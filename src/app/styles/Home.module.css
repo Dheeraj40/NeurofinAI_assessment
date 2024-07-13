@@ -1,0 +1,28 @@
+/* styles/Home.module.css */
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  .mainContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content {
+    display: flex;
+    background-color: #161616;
+    height: 80vh; /* Adjust the height as needed */
+  }
+  
+  .content > :first-child {
+    flex: 1.1; /* Reduce size of ChargerTable */
+  }
+  
+  .content > :last-child {
+    flex: 0.8; /* Increase size of DetailPanel */
+  }
+  
